@@ -1,8 +1,12 @@
 import { Type } from 'beamio';
 
 /**
- * Envoyé par le client pour s'identifier.
+ * Client -> Envoie son sessionID (même s'il est vide)
+ * Server -> Envoie le sessionID du client
  */
-export const initSession = {
+export const initClient = {
+  /** sessionID du client */
   session: Type.String,
 };
+
+export default {};
