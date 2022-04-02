@@ -2,7 +2,10 @@
   "name": "drinx-schemes",
   "version": "0.0.0",
   "description": "BeamIO schemes used by DrinX",
-  "main": "main.sch.ts",
+  "main": "dist/main.sch.js",
+  "scripts": {
+    "build": "echo Compiling... && rm -fr build/ && tsc && echo Compilation done ! && echo"
+  },
   "keywords": [
     "DrinX",
     "BeamIO"
